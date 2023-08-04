@@ -1,19 +1,15 @@
 {% extends "base.html" %}
 
-{% block titulo %}
-
-    Lista de libros
-    
-{% endblock %}
+{% block titulo %} Lista de libros {% endblock %}
 
 {% block contenido %}
 
     <div class="card">
         <div class="card-header">
-            Listar Libros
+            <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar nuevo libro</a>
         </div>
         <div class="card-body">
-            <h4 class="card-title">Title</h4>
+            <h4 class="card-title">Libros</h4>
             <div class="table-responsive">
                 <table class="table table-primary">
                     <thead>
@@ -31,7 +27,10 @@
                             <td>Django pyhton</td>
                             <td>imagen.jgp</td>
                             <td>Libros que habla de python</td>
-                            <td>Editar/Borrar</td>
+                            <td>
+                                <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a> | 
+                                <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
