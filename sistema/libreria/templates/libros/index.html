@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+
+    Lista de libros
+    
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="card">
+        <div class="card-header">
+            Listar Libros
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>1</td>
+                            <td>Django pyhton</td>
+                            <td>imagen.jgp</td>
+                            <td>Libros que habla de python</td>
+                            <td>Editar/Borrar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+{% endblock %}  
